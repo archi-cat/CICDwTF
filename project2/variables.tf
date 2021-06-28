@@ -10,3 +10,8 @@ variable "rg_location" {
   default     = "uksouth"
 }
 
+variable "vnet_name" {
+  type = string
+  description = "Name of Vnet"
+  default = "t2a-vnet"
+}
