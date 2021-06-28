@@ -1,12 +1,12 @@
 variable "rg_name" {
-  type = string
+  type        = string
   description = "Name of the resource group"
-  default = "t2a-rg"
+  default     = "t2a-rg"
 }
 
 variable "rg_location" {
-  type = string
+  type        = string
   description = "Location of the resource group"
-  default = "uksouth"
+  default     = "uksouth"
 }
 
