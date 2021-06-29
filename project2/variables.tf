@@ -11,7 +11,7 @@ variable "rg_location" {
 }
 
 variable "vnet_name" {
-  type = string
+  type        = string
   description = "Name of Vnet"
-  default = "t2a-vnet"
+  default     = "t2a-vnet"
 }
