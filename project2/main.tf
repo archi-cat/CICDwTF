@@ -32,3 +32,10 @@ resource "azurerm_virtual_network" "T2A-vnet" {
   address_space       = ["10.0.0.0/16"]
   dns_servers         = ["8.8.8.8", "8.8.4.4"]
 }
+
+resource "azurerm_subnet" "T2A-subnet" {
+  name                 = var.subnet_name
+  resource_group_name  = azurerm_resource_group.t2a-rg.name
+  virtual_network_name = azurerm_virtual_network.T2A-vnet.name
+  address_prefix = "10.0.1.0/24"
+}

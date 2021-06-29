@@ -15,3 +15,9 @@ variable "vnet_name" {
   description = "Name of Vnet"
   default     = "t2a-vnet"
 }
+
+variable "subnet_name" {
+  type = string
+  description = "Name of subnet"
+  default = "t2a-subnet"
+}
