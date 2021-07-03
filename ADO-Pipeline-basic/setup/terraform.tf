@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     azuredevops = {
-      source  = "microsoft/azuredevops"
+      source  = "registry.terraform.io/microsoft/azuredevops"
       version = ">=0.1.0"
     }
 
