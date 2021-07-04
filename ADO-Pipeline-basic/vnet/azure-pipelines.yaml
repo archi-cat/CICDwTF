@@ -22,7 +22,7 @@ stages:
     - task: TerraformInstaller@0
       displayName: Install Terraform
       inputs:
-        terraformVersion: 'latest'
+        terraformVersion: '1.0.1'
 
   # Init
     - task: Terraform@2
@@ -52,7 +52,7 @@ stages:
     - task: TerraformInstaller@0
       displayName: Install Terraform
       inputs:
-        terraformVersion: 'latest'
+        terraformVersion: '1.0.1'
 
   # Init
     - task: Terraform@2
@@ -102,7 +102,7 @@ stages:
     - task: TerraformInstaller@0
       displayName: Install Terraform
       inputs:
-        terraformVersion: 'latest'
+        terraformVersion: '1.0.1'
 
   # Init
     - task: Terraform@2
