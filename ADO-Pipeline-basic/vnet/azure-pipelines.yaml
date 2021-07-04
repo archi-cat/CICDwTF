@@ -25,7 +25,7 @@ stages:
         terraformVersion: '1.0.1'
 
   # Init
-    - task: Terraform@2
+    - task: Terraform@0
       displayName: Initialize Terraform
       env:
         ARM_SAS_TOKEN: $(sas_token)
@@ -36,7 +36,7 @@ stages:
         backendType: 'selfConfigured'
 
   # Validate
-    - task: Terraform@2
+    - task: Terraform@0
       displayName: Validate Config
       inputs:
         command: 'validate'
@@ -55,7 +55,7 @@ stages:
         terraformVersion: '1.0.1'
 
   # Init
-    - task: Terraform@2
+    - task: Terraform@0
       displayName: Initialize Terraform
       env:
         ARM_SAS_TOKEN: $(sas_token)
@@ -66,7 +66,7 @@ stages:
         backendType: 'selfConfigured'
 
   # Plan
-    - task: Terraform@2
+    - task: Terraform@0
       displayName: Plan Terraform Deployment
       env:
         ARM_SAS_TOKEN: $(sas_token)
@@ -105,7 +105,7 @@ stages:
         terraformVersion: '1.0.1'
 
   # Init
-    - task: Terraform@2
+    - task: Terraform@0
       displayName: Initialize Terraform
       env:
         ARM_SAS_TOKEN: $(sas_token)
@@ -116,7 +116,7 @@ stages:
         backendType: 'selfConfigured'
 
   # Apply
-    - task: Terraform@2
+    - task: Terraform@0
       displayName: Apply Terraform Deployment
       env:
         ARM_SAS_TOKEN: $(sas_token)
