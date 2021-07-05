@@ -19,10 +19,10 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: TerraformInstaller@0
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller
       displayName: Install Terraform
       inputs:
-        terraformVersion: '1.0.1'
+        terraformVersion: 'latest'
 
   # Init
     - task: TerraformCLI@0
@@ -49,10 +49,10 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: TerraformInstaller@0
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller
       displayName: Install Terraform
       inputs:
-        terraformVersion: '1.0.1'
+        terraformVersion: 'latest'
 
   # Init
     - task: TerraformCLI@0
@@ -99,10 +99,10 @@ stages:
     pool:
       vmImage: ubuntu-latest
     steps:
-    - task: TerraformInstaller@0
+    - task: ms-devlabs.custom-terraform-tasks.custom-terraform-installer-task.TerraformInstaller
       displayName: Install Terraform
       inputs:
-        terraformVersion: '1.0.1'
+        terraformVersion: 'latest'
 
   # Init
     - task: TerraformCLI@0
